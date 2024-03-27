@@ -32,7 +32,7 @@ if not st.session_state:
 
 example_image_pattern = "streamlit-prettymapp/example_prints/{}_small.png"
 example_image_fp = [
-    example_image_pattern.format(name.lower()) for name in list(EXAMPLES.keys())[:4]
+    example_image_pattern.format(name.lower()) for name in list(EXAMPLES.keys())[:]
 ]
 index_selected = image_select(
     "",
